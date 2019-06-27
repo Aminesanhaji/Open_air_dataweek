@@ -1,0 +1,59 @@
+<footer id="footer" class="footer footer-inverse">
+    <div class="footer-bottom py-4">
+        <div class="container">
+            <div class="row cols-xs-space col-sm-space align-items-center">
+                <div class="col-lg-3 col-12">
+                    <div class="">
+                        <div class="copyright">
+                            <ul class="copy-links no-margin">
+                                <li>
+                                    © 2019 Open Air
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <ul class="footer-menu footer-menu-sm">
+                            <% unless (controller_name == "topics" && action_name == "index") %>
+                            <li>
+                                <%= link_to "Accueil", root_path, style: "padding-left: 0;" %>
+                            </li>
+                            <% end %>
+                            <li>
+                                <%= link_to "À propos", page_path('about', anchor: "top") %>
+                            </li>
+                            <li>
+                                <%= mail_to "open-air@alabintheair.cc" do %>
+                                <span>Contact</span>
+                                <% end %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="text-xs-center text-sm-right">
+                        <ul class="social-media social-media--style-1-v4">
+                            <li>
+                                <%= link_to "https://www.linkedin.com/company/a-lab-is-in-the-air/about/", target: "_blank" do %>
+                                <i class="fa fa-linkedin"></i>
+                                <%end%>
+                            </li>
+                            <li>
+                                <%= link_to "https://www.facebook.com/A-LAB-in-the-AIR-1683991011853827/", target: "_blank" do %>
+                                <i class="fa fa-facebook"></i>
+                                <%end%>
+                            </li>
+                            <li>
+                                <%= link_to "https://twitter.com/OpenAir82434106", target: "_blank" do %>
+                                <i class="fa fa-twitter"></i>
+                                <%end%>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

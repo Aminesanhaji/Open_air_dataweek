@@ -1,0 +1,14 @@
+<div id="message">
+  <% if notice %>
+  <br>
+  <div  id="inner-message-success" class="alert alert-success" role="alert">
+    <%= notice %>
+  </div>
+  <% end %>
+  <% if alert %>
+  <br>
+  <div  id="inner-message-danger" class="alert alert-danger" role="alert">
+    <%= alert %>
+  </div>
+  <% end %>
+</div>
